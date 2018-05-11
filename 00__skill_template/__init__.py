@@ -44,7 +44,7 @@ class TemplateSkill(MycroftSkill):
         # Mycroft will randomly speak one of the lines from the file
         #    dialogs/en-us/hello.world.dialog
         sense.show_message("Hi template")
-        self.speak_dialog("hi.template")
+        self.speak_dialog("hello.world")
 
     @intent_handler(IntentBuilder("").require("Count").require("Dir"))
     def handle_count_intent(self, message):
